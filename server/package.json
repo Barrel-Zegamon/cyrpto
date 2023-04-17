@@ -1,0 +1,36 @@
+{
+  "name": "mern-auth",
+  "version": "1.0.0",
+  "description": "Mern Auth Example",
+  "main": "server.js",
+  "scripts": {
+    "client-install": "npm install --prefix client",
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@formspree/react": "^2.4.1",
+    "bcryptjs": "2.4.3",
+    "body-parser": "1.18.3",
+    "concurrently": "4.0.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "4.16.4",
+    "firebase": "^9.19.1",
+    "gh-pages": "^4.0.0",
+    "is-empty": "1.2.0",
+    "jsonwebtoken": "8.3.0",
+    "mongoose": "^5.13.17",
+    "nodemailer": "^6.8.0",
+    "nodemailer-sendgrid-transport": "^0.2.0",
+    "passport": "0.4.0",
+    "passport-jwt": "4.0.0",
+    "validator": "10.9.0"
+  }
+}

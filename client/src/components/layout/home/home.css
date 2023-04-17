@@ -1,0 +1,370 @@
+
+
+.home {
+    /* height: 600px; */
+    background-color: black;
+    text-align: center;
+    /* padding: 20px 3vw; */
+    color: white;
+    
+}
+
+
+.banner {
+    /* background: linear-gradient(rgb(0, 102, 255,0.1),rgb(0, 102, 255,1) 95%); */
+    background: linear-gradient(rgb(0, 102, 255,0.1), rgb(0, 0, 0,1) 95%),url(./assets/backg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    height: 68vw;
+    padding: 16vw 4vw;
+    /* padding-top: 21vw; */
+    min-height: 325px;
+    max-height: 950px;
+    background-position: center;
+}
+
+.banner h2 {
+    /* font-size: 5vw; */
+    margin-top: clamp(20px,10vw,30px);
+    font-size: clamp(30px,5vw,70px);
+}
+.banner h3 {
+    /* font-size: 3.5vw; */
+    /* font-size: 12px; */
+    font-size: clamp(18px,3.5vw,48px);
+    color: rgb(0, 178, 263);
+}
+.banner p {
+    font-size: clamp(14px,1.6vw,24px);
+    font-weight: bold;
+}
+
+.banner button, .about-us button, .plan-card button {
+    background-color: var(--primary);
+    color: white;
+    border: none;
+    /* padding: 1.4vw 2vw; */
+    border-radius: 4px;
+    font-weight: bold;
+    margin-top: 10vw;
+    font-size: clamp(10px,1.6vw,24px);
+    height: clamp(30px,3.8vw,59px);
+    width: clamp(170px,20vw,350px);
+    /* width: 350px; */
+}
+
+video {
+    height: 60vw;
+    width: 80%;
+    max-height: 600px;
+    max-width: 900px;
+    background-color: white;
+    border-radius: 4px;
+    margin: 15px auto;
+}
+
+.about-us {
+    padding: 6vw;
+    text-align: left;
+}
+
+.about-us img {
+    width: 100%;
+}
+
+.about-us h2, .plans h2 {
+    font-size: var(--h2-font);
+}
+.about-us h3 {
+    font-size: var(--h3-font);
+}
+
+.about-us p, .plans p {
+    font-size: var(--p-font);
+    line-height: var(--p-line);
+    color: white;
+}
+
+.service div {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .service h3 {
+    font-size: var(--h2-font);
+
+  }
+
+  .service img {
+    margin-bottom: 18px;
+  }
+
+
+
+.plans{
+    padding: 0 5vw;
+}
+
+.plan-cards {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 20px 0;
+}
+
+.plan-card {
+    /* height: 220px; */
+    background-color: #36454f;
+    color: white;
+    box-shadow: 0px 0px 10px 1px var(--primary);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-radius: 7px;
+    margin: 20px auto;
+    width: 75%;
+    cursor: pointer;
+    transition: .7s;
+
+}
+
+.plan-card:hover {
+    background-color: rgb(0, 178, 263);
+    box-shadow: 0 5px 10px 5px rgb(0, 178, 263, 0.502);
+}
+
+.plan-card:hover hr {
+    border-color: rgb(0, 178, 263);
+}
+
+.plan-card button {
+    width: 50%;
+    margin: 0 auto;
+    cursor: pointer;
+}
+.plan-card p {
+    /* border-bottom: 1px solid var(--primary); */
+    width: fit-content;
+    margin: 10px auto;
+    font-size: var(--card-p-font);
+    line-height: var(--card-p-line);
+    /* color: grey; */
+}
+
+.plan-card hr {
+    width: 90%;
+    margin: 0 auto;
+    border-color: var(--primary);
+}
+
+.why-choose {
+    background-color: grey;
+    padding: 30px 3vw;
+    margin-bottom: 40px;
+}
+
+.why-choose h1 {
+   font-size: var(--h2-font);
+}
+
+.why-choose h2 {
+    color: var(--primary);
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.why-choose p {
+    font-size: var(--p-font);
+    line-height: var(--p-line);
+    margin-top: 10px;
+}
+
+.choose-cards {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.choose-card {
+      /* height: 220px; */
+      background-color: rgb(0, 0, 0);
+      color: white;
+      padding: 20px 10px;
+      border-radius: 7px;
+      margin: 20px auto;
+      width: 45%;
+      cursor: pointer;
+      transition: .7s;
+}
+
+.choose-card img {
+    height: 30px;
+}
+
+.testimony-cards {
+    display: flex;
+    overflow-x: scroll;
+    gap: 10%;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+    z-index: 2;
+}
+
+.testimony-cards::-webkit-scrollbar {
+    display: none;
+  }
+
+.testimony-card {
+    background-color: var(--secondary);
+    padding: 20px;
+    border-radius: 6px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: left;
+    position: relative;
+    min-width: 100%;
+    scroll-snap-align: start;
+}
+
+.testimony-card img {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    border: 2px solid rgb(0,230,263);
+    position: absolute;
+    top: 48%;
+    right: 8%;
+}
+
+.testimony-card hr {
+    border: 1px solid rgb(0,230,263);
+    position: absolute;
+    top: 59%;
+    width: 86%;
+}
+
+.team-cards {
+    display: flex;
+    justify-content: space-around;
+}
+
+.member {
+    background-color: #36454f;
+    padding: 20px 0;
+    border-radius: 8px;
+    width: 40%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    transition: .7s;
+}
+
+.member:hover {
+    background-color: rgb(0, 178, 263);
+    box-shadow: 0 5px 10px 5px rgb(0, 178, 263, 0.502);
+}
+
+.member img {
+    width: 70%;
+}
+
+@media (max-width: 800px) {
+    .plan-cards {
+        grid-template-columns: auto auto;
+    }
+
+
+}
+
+.plan-card {
+    width: 90%;
+}
+
+@media (max-width: 550px) {
+
+    .banner {
+        height: 400px;
+    }
+
+    .banner h2 {
+        margin-top: 50px;
+        margin-bottom: 30px;
+    }
+
+    .banner p {
+        display: none;
+    }
+
+    .choose-card {
+        width: 95%;
+  }
+
+    .plan-cards {
+        display: block;
+    }
+
+    .team-cards {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .member {
+        width: 80%;
+        margin: 20px 0;
+    }
+}
+
+@media (min-width: 1200px) {
+  .service {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 40px;
+    flex-direction: row-reverse;
+    /* white-space: nowrap; */
+  }
+
+  .service img {
+    min-width: 40%;
+    width: 40%;
+    /* height: 100%; */
+    /* float: right; */
+    margin: 30px;
+  }
+
+  .service div {
+    width: 60%;
+  }
+
+  .service h3 {
+    margin-bottom: 18px;
+  }
+
+  .choose-card {
+    width: 30%;
+}
+
+  .testimony-cards {
+    gap: 7%;
+    /* justify-content: space-around; */
+    }
+
+  .testimony-card {
+    min-width: 40%;
+  }
+
+  .testimony-card p{
+    font-size: 20px;
+}
+
+.testimony-card img {
+    /* top: 51%; */
+    right: 6%;
+}
+}
